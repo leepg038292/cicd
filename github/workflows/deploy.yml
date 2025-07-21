@@ -16,7 +16,7 @@ jobs:
       - name: ☕ JDK 17 설치 (스프링부트용)
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
+          java-version: '21'
 
       - name: 🏗️ Gradle build
         run: ./gradlew build
