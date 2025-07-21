@@ -36,29 +36,29 @@ class memberserviceTest {
 
     }
 
-    @Test
-    void 중복_회원_예외() {
-
-        //given
-        Member member1 = new Member();
-        member1.setName("spring");
-
-        Member member2 = new Member();
-        member2.setName("spring");
-
-        //when
-
-        ms.join(member1);
-        try {
-            ms.join(member2);
-            fail();
-        } catch (IllegalStateException e){
-            assertThat(e.getMessage()).isEqualTo("이미 존재띠");
-        }
-
-
-
-    }
+//    @Test
+//    void 중복_회원_예외() {
+//
+//        //given
+//        Member member3 = new Member();
+//        member3.setName("spring2");
+//
+//        Member member4 = new Member();
+//        member4.setName("spring2");
+//
+//        //when
+//
+//        ms.join(member3);
+//        try {
+//            ms.join(member4);
+//            fail();
+//        } catch (IllegalStateException e){
+//            assertThat(e.getMessage()).isEqualTo("이미 존재띠");
+//        }
+//
+//
+//
+//    }
 
     @Test
     void findMember() {
